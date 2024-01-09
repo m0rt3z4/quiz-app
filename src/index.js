@@ -10,10 +10,10 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(() => {
     logger.info(
       `${config.service.normalizedName} listening to port ${config.port}`
     );
-    startup().catch((error) => {
-      logger.error(JSON.stringify(error));
-      exitHandler();
-    });
+    // startup().catch((error) => {
+    //   logger.error(JSON.stringify(error));
+    //   exitHandler();
+    // });
   });
 });
 
